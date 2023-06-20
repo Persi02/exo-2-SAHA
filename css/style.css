@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     top: 0;
     left: 0;
-    padding: 0 112px;
+    padding: 10px 112px;
     position: absolute;
 
 }
@@ -60,6 +60,7 @@ header nav a {
     background-image: url('../img/Hero.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 0 0 112px;
@@ -163,7 +164,7 @@ header nav a {
     justify-content: space-evenly;
     margin: 50px 0 0 0;
     border: 1px solid #E0E3EB;
-    padding-left: 10px;
+    padding: 0 10px;
 
 }
 
@@ -216,9 +217,18 @@ main {
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px 30px;
+    gap: 5%;
+    padding: 50px;
 
+}
+
+.about-profil p {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
 }
 
 .about-profil button {
@@ -324,6 +334,7 @@ main {
     font-size: 60px;
     line-height: 70px;
     color: #2947A9;
+
 }
 
 .letter-expert p {
@@ -354,6 +365,7 @@ main {
     justify-content: space-evenly;
     background-image: url('../img/unsplash_MP0bgaS_d1c.png');
     color: #fff;
+    align-items: center;
     padding: 100px 0;
 
 }
@@ -384,13 +396,19 @@ main {
 .section-project {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 80px 0;
+
+    padding: 80px 112px;
 }
 
-.text-project {
-    padding-left: 160px;
+.text-project {}
+
+.descri-project {
+    padding: 10px;
 }
 
+.descri-project p {
+    margin-top: 10px;
+}
 
 
 .img-card-project {
@@ -398,7 +416,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    margin-right: 160px;
+
     margin-top: 80px;
 }
 
@@ -498,10 +516,10 @@ main {
     border-radius: 4px;
 }
 
-footer {
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
+    padding: 80px 112px 0 112px;
 }
 
 address {
@@ -512,10 +530,10 @@ address {
 
 .flex-foot {
     display: flex;
-    margin-left: 112px;
+
 }
 
-footer h5 {
+.footer h5 {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -587,4 +605,394 @@ footer h5 {
     padding-left: 112px;
 }
 
+/*  responsive 1280px */
+@media (max-width:1280px) {
+    .profil {
+        width: 100%;
+    }
+
+    .about-profil {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        top: 100%;
+        transform: translateY(-30%);
+        gap: 24px;
+    }
+}
+
+
+/* responsive max 1024 */
+@media (max-width:1024px) {
+    .hero {
+        padding: 0 0 0 50px;
+    }
+
+    .card-title {
+        width: 100%;
+    }
+
+    .our {
+        padding: 40px 70px;
+    }
+
+    .card-our {
+        gap: 31px;
+    }
+
+    .section-about {
+        width: 100%;
+        padding: 50px 50px;
+    }
+
+    .profil {
+        width: 100%;
+    }
+
+    .about-profil {
+        width: 100%;
+        height: auto;
+        background-color: #2947A9;
+        position: unset;
+        left: unset;
+        top: unset;
+        transform: unset;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px;
+    }
+
+    .section-service {
+        width: 100%;
+        padding: 20px 50px;
+    }
+
+    .section-service h4 {
+        margin-bottom: 40px;
+    }
+
+    .block-service {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+
+    .section-experience {
+        width: 100%;
+        padding: 20px 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-expert {
+        width: 100%;
+        min-width: none;
+    }
+
+    .letter-expert {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        height: auto;
+    }
+
+    .letter-expert h2 {
+        width: unset;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        color: #2947A9;
+        text-align: center;
+
+    }
+
+    .letter-expert p {
+        text-align: center;
+    }
+
+    .section-banner {
+
+        padding: 58px 50px;
+
+    }
+
+    .section-project {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 112px;
+    }
+
+    .formulaire {
+        width: 100%;
+
+    }
+
+    .section-form {
+        padding: 0 50px;
+    }
+
+    .footer {
+        grid-template-columns: 56% 44%;
+        padding: 80px 20px 0 20px;
+    }
+
+    .flex-foot {
+        flex-direction: column;
+    }
+}
+
+
+
 /*responsive*/
+@media (max-width:768px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    header nav {
+        position: absolute;
+        background-color: #3559C7;
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        top: 100%;
+        left: 0;
+        padding: 15px 0;
+
+    }
+
+    header nav a {
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: -1;
+        padding: 0 112px;
+    }
+
+    .card-feat {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .card-title {
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .our {
+        width: 100%;
+        background-color: #fff;
+        padding: 40px 50px;
+    }
+
+    .card-our {
+
+        width: 100%;
+        grid-template-columns: 1FR 1fr;
+        gap: 20px;
+    }
+
+    .h4-our {
+        margin-bottom: 30px;
+    }
+
+    .card-article {
+        padding: 0 10px;
+        margin-top: 0;
+    }
+
+    .section-about {
+        width: 100%;
+        padding: 50px 16px;
+    }
+
+    .profil {
+        width: 100%;
+    }
+
+    .about-profil {
+        width: 100%;
+        height: auto;
+        background-color: #2947A9;
+        position: unset;
+        left: unset;
+        top: unset;
+        transform: unset;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .section-service {
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .section-service h4 {
+        margin-bottom: 40px;
+    }
+
+    .block-service {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .flex1-m {
+        order: 1;
+
+    }
+
+    .flex2-m {
+        order: 2;
+
+    }
+
+    .flex3-m {
+        order: 4;
+
+    }
+
+    .flex4-m {
+        order: 3;
+
+    }
+
+    .flex5-m {
+        order: 5;
+
+    }
+
+    .flex6-m {
+        order: 6;
+
+    }
+
+    .section-experience {
+        width: 100%;
+        padding: 20px 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-expert {
+        width: 100%;
+        min-width: none;
+    }
+
+    .letter-expert {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .letter-expert h2 {
+        width: unset;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        color: #2947A9;
+        text-align: center;
+
+    }
+
+    .letter-expert p {
+        text-align: center;
+    }
+
+    .section-banner {
+
+        padding: 58px 16px;
+    }
+
+    .section-project {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 80px 16px;
+    }
+
+    .section-form {
+
+        padding: 0 16px;
+    }
+
+    .formulaire {
+        width: 100%;
+    }
+
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 16px 0 16px;
+    }
+
+    .flex-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        grid-row: 1;
+        text-align: center;
+    }
+
+    address {
+
+        gap: 20px;
+    }
+
+    .card-newsletter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .child-newsletter {
+        margin-right: 0;
+    }
+
+    .letter-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .letter-newsletter h5 {
+        text-align: center;
+    }
+}
